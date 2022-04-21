@@ -28,11 +28,17 @@ You need to install `sshpass` package.
 ## DDBB
 ##### SSMS <sup>[windows]</sup>
 
-* **Scheme:** `rdp`
-* **Command:**
+* **Scheme:** `ddbb`
+* **Command:** Auto login windows server
 ```
-cmd://cmd /c "cmd://"C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe" -S {USERNAME} -D {TITLE} -E"
+cmd://"C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe" -S {USERNAME} -D {TITLE} -E"
 ```
+
+* **Command:** Login user sql server
+```
+cmd://"C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\Ssms.exe" -S {NOTES} -D {TITLE} -U {USERNAME} -P {PASSWORD}
+```
+
 
 
 ## RDP
