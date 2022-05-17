@@ -10,12 +10,16 @@ Here I collect url override scripts for KeePass in Linux and Windows systems.
 cmd://"{ENV_PROGRAMFILES_X86}\PuTTY\putty.exe" -ssh "{USERNAME}@{URL:HOST}" -P {BASE:PORT} -pw "{PASSWORD}" 
 ```
 
+
 ##### OpenSSH Client <sup>[linux]</sup>
 
 * **Scheme:** `ssh`
 * **Command:**
 ```
 cmd://xterm -e sshpass -p {PASSWORD} ssh -o StrictHostKeyChecking=no {USERNAME}@{BASE:RMVSCM}
+```
+```
+cmd://cmd://ssh {USERNAME}@{S:HOST} -p {S:PORT}
 ```
 
   More secure command:
